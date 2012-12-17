@@ -19,7 +19,7 @@ module.exports = function( grunt ) {
     coffee: {
       compile: {
         files: {
-          'temp/scripts/*.js': 'app/scripts/**/*.coffee' 
+          'temp/scripts/*.js': 'app/scripts/**/*.coffee'
         },
         options: {
           basePath: 'app/scripts'
@@ -36,6 +36,7 @@ module.exports = function( grunt ) {
           sass_dir: 'app/styles',
           images_dir: 'app/images',
           javascripts_dir: 'temp/scripts',
+          config: '.compass.rb',
           force: true
         }
       }
@@ -132,7 +133,8 @@ module.exports = function( grunt ) {
     rev: {
       js: 'scripts/**/*.js',
       css: 'styles/**/*.css',
-      img: 'images/**'
+      //img: 'images/**'
+      img: ''
     },
 
     // usemin handler should point to the file containing
@@ -144,7 +146,8 @@ module.exports = function( grunt ) {
     // update references in HTML/CSS to revved files
     usemin: {
       html: ['**/*.html'],
-      css: ['**/*.css']
+      css: ['**/*.css'],
+      js: ['**/*.js']
     },
 
     // HTML minification
