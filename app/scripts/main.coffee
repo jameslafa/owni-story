@@ -121,7 +121,7 @@ class OwniStory
     # To get nice color, we use colorbrewer
     @fillGroupColor = d3.scale.ordinal()
                       .domain(@groups)
-                      .range(["#b3e2cd", "#fdcdac", "#cbd5e8", "#f4cae4", "#e6f5c9"]);
+                      .range(["#0395D0", "#F8DE81", "#E1316F", "#59E898", "#888371"]);
 
 
   # Get every employee new enterprises to create a list.
@@ -191,7 +191,7 @@ class OwniStory
       .attr("r", (d) -> 15)
       .attr("fill", (d) => @fillGroupColor(@groups.indexOf(d)))
       .attr("stroke-width", 2)
-      .attr("stroke", (d) => d3.rgb(@fillGroupColor(@groups.indexOf(d[@graphSettings.groupIdentifier]))).darker())
+      .attr("stroke", (d) => d3.rgb(@fillGroupColor(@groups.indexOf(d))).darker())
       .attr("x", 10)
       .attr("y", 0)
 
