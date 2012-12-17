@@ -1,0 +1,205 @@
+//@import "compass_twitter_bootstrap";
+
+.container-fluid{
+  font-family: 'Open Sans', sans-serif;
+  position:relative;
+
+  h1.title{
+    color:#707070;
+    font-size: 30px;
+    font-weight: bold;
+    left:0;
+    margin:0;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 1px 0px #EEE, 2px 2px 0px #707070;
+    text-transform: uppercase;
+    top:5px;
+    width: 100%;
+  }
+
+  .information {
+    background: white url(../images/info.png) 0 0 no-repeat;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px #CCC;
+    font-size: 13px;
+    height:45px;
+    left: 0;
+    overflow: hidden;
+    padding: 0 0 0 45px;
+    position: absolute;
+    text-align: justify;
+    transition: width 1s ease, height 1s ease;
+    -moz-transition: width 1s ease, height 1s ease;
+    -webkit-transition: width 1s ease, height 1s ease;
+    -o-transition: width 1s ease, height 1s ease;
+    top: 50px;
+    width: 0px;
+    z-index: 10;
+
+    .content{
+      padding: 20px 20px 20px 20px;
+      width:600px;
+    }
+
+    p {
+      margin: 5px auto;
+    }
+
+    a {
+      color:#333;
+
+      &:visited{
+        color:#333;
+      }
+    }
+
+    &:hover{
+      height:230px;
+      width: 640px;
+    }
+  }
+
+  .replay{
+    background: white url(../images/replay.png) 0 0 no-repeat;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px #CCC;
+    height:45px;
+    left:0;
+    position: absolute;
+    top:100px;
+    width:45px;
+  }
+
+  a.credits{
+    bottom:5px;
+    color:#707070;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    right:5px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  svg{
+    margin: 0 auto;
+  }
+
+  .timeline-container{
+    fill:white;
+    stroke: #eee;
+    stroke-width: 1px;
+  }
+
+  .current_date{
+    fill:#999;
+    font-size: 20px;
+    font-size-adjust: 10px;
+    font-weight: bold;
+    text-anchor: middle;
+    text-shadow: 1px 1px 3px 1px #999;
+  }
+
+  .employee-changes{
+    font-size: 12px;
+    position:absolute;
+    right:10px;
+    top:10px;
+    width:250px;
+
+    .employee{
+      border-radius: 5px;
+      box-shadow: 1px 1px 2px 1px #eee;
+      clear:both;
+      margin-bottom: 10px;
+      min-height: 30px;
+      padding: 10px 10px;
+
+      .info{
+        float:left;
+        line-height: 15px;
+
+        div{
+          line-height: 15px;
+        }
+        .name{
+          font-weight:bold;
+        }
+      }
+
+      &.in {
+        .action{
+          background: url(../images/hey.png) top right no-repeat;
+          float:left;
+          height:30px;
+          width: 30px;
+        }
+        .name {
+          line-height: 30px;
+        }
+        .enterprise {
+          display: none;
+        }
+      }
+
+      &.out .action{
+        background: url(../images/bye.png) top right no-repeat;
+        float:left;
+        height:30px;
+        width: 30px;
+      }
+
+      img{
+        float:left;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .legend{
+    text{
+      font-size: 10px;
+      alignment-baseline:central;
+    }
+  }
+}
+
+
+
+.tooltip {
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px #999;
+  color: black;
+  font-size: 12px;
+  left: 100px;
+  opacity: .9;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 300px;
+  z-index: 10;
+
+  .title{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .pic{
+    img{
+      border-radius: 2px;
+      box-shadow: 1px 1px 3px 1px #999;
+      height:73px;
+      width: 73px;
+    }
+  }
+
+  .enterprise{
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+}
