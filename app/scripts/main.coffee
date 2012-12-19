@@ -356,6 +356,7 @@ class OwniStory
     # If the next date is later than today, stop the animation
     if @currentDate > moment()
       clearTimeout(@timer)
+      this.updateVis()
     else
       # Evaluate the next timeout depending the employee activity
       nextTimeout = 0
